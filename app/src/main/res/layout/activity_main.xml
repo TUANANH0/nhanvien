@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="36dp"
+        android:textSize="30sp"
+        android:text="Add Nhan Vien"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtTextTen"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtInfo" />
+
+    <EditText
+        android:id="@+id/edtTextDate"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Date"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/edtTextTen"
+        app:layout_constraintStart_toStartOf="@+id/edtTextTen"
+        app:layout_constraintTop_toBottomOf="@+id/edtTextTen" />
+
+
+    <EditText
+        android:id="@+id/edtTextGender"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Gender"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/edtTextDate"
+        app:layout_constraintStart_toStartOf="@+id/edtTextDate"
+        app:layout_constraintTop_toBottomOf="@+id/edtTextDate" />
+    <EditText
+        android:id="@+id/edtTextSalary"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Salary"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/edtTextGender"
+        app:layout_constraintStart_toStartOf="@+id/edtTextGender"
+        app:layout_constraintTop_toBottomOf="@+id/edtTextGender" />
+
+    <Button
+        android:id="@+id/btnSaveData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="116dp"
+        android:text="Save Data"
+        app:layout_constraintEnd_toEndOf="@+id/edtTextGender"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/edtTextGender"
+        app:layout_constraintTop_toBottomOf="@+id/edtTextGender" />
+
+    <Button
+        android:id="@+id/btnViewList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="View List Nhan Vien"
+        app:layout_constraintEnd_toEndOf="@+id/btnSaveData"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="@+id/btnSaveData"
+        app:layout_constraintTop_toBottomOf="@+id/btnSaveData" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
